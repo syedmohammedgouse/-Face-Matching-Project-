@@ -4,6 +4,12 @@ import streamlit as st
 from PIL import Image # pip3.9 install pillow
 import os
 
+
+def load_image(image_file):
+    img=Image.open(image_file)
+    return img
+
+st.header("Face Matching Project using AWS")
 def load_image(image_file):
     img=Image.open(image_file)
     return img
